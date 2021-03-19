@@ -6,3 +6,19 @@ DF$fact = factor(DF$fact)
  DF$date2 = date(DF$date2)
 
 df1 = data.frame(Date=abs(DF$date1 - DFlab1$date2))
+
+r = -DF$b / DF$k
+df1$radical = r
+
+for (i in 1:length(DF$a)){
+  if (DF$a[i] > DF$b[i]){
+    df1$comparison[i] = DF$a[i]
+  }else if (DF$a[i] < DF$b[i]){
+    Df1$comparison[i] = DF$b[i]
+  }else{
+    Df1$comparison[i] = 0
+  }
+}
+
+table(DF$fact)
+write.table(DF, file="lab1_rez.csv", sep=",")
