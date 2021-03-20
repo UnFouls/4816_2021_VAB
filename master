@@ -1,4 +1,4 @@
-library("readxl")
+library("readxl") # Броооо, как дела?))0
 DF <- read_excel("C:/Users\Владислав\Desktop\учеба\Статистика\Книга2.xlsx", col_types = c("date", "date", "numeric", "numeric", "numeric", "numeric", "text")) 
 
 DF$fact = factor(DF$fact)
